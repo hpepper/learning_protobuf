@@ -1,0 +1,16 @@
+// These are the messages the server side sends.
+
+edition = "2023";
+
+import "server_connection_response.proto";
+import "server_disconnect_response.proto";
+
+// This is required to reference the ConnectionRequest etc.
+package edge;
+
+message ServerMessage {
+    oneof payload {
+        ConnectionResponse connection_response = 1;
+        DisconnectionResponse disconnection_response = 2;
+    }
+}

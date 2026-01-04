@@ -1,0 +1,16 @@
+edition = "2023";
+
+package connection;
+
+message ConnectionRequest {
+  // PEM or DER encoded certificate
+  bytes certificate = 1;
+}
+
+message ConnectionResponse {
+  // 0 = success, non-zero = error
+  uint32 return_code = 1;
+
+  // Explicitly optional failure reason
+  string failure_reason = 2;
+}

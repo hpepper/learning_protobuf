@@ -1,0 +1,11 @@
+// Client connection request.
+
+edition = "2023";
+
+package edge;
+
+message ConnectionRequest {
+  // PEM or DER encoded certificate
+  bytes certificate = 1;
+}
+

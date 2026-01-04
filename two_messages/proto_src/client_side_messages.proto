@@ -1,0 +1,16 @@
+// Messages comming to the edge from the client.
+
+edition = "2023";
+
+import "client_connection_request.proto";
+import "client_disconnect_request.proto";
+
+// This is required to reference the ConnectionRequest etc.
+package edge;
+
+message ClientMessage {
+    oneof payload {
+        ConnectionRequest connection_request = 1;
+        DisconnectionRequest disconnection_request = 2;
+    }
+}

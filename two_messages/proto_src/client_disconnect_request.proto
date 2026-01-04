@@ -1,0 +1,7 @@
+edition = "2023";
+
+package edge;
+
+message DisconnectionRequest {
+  uint64 session_id = 1;
+}
