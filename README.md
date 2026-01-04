@@ -1,5 +1,6 @@
 # Learning protobuf for rust
 
+- [Notes on protobuffer](https://github.com/hpepper/henpep-dev-tools/wiki/ProtoBuffer)
 - [Protocol Buffers Documentation - Rust Reference](https://protobuf.dev/reference/rust/)
 - [Language Guide - editions](https://protobuf.dev/programming-guides/editions/)
 - [rust files](https://protobuf.dev/reference/rust/rust-generated/)
